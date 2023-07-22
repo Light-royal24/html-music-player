@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Music Player</title>
+</head>
+<body>
+	<div class="container ">
+		<div class="top">
+			<img src="img/menu.gif" class="menu-btn" >
+			<img src="img/icons8-search-30.png" alt="">
+		</div>
+			<div class="cover-image"></div>
+				
+			<div class="player-body"></div>	
+
+
+		<div class="list-wrapper">
+			<table class="list" id="playlist">
+				<tr class="songs">
+					<td class="no">,
+						<h5>1</h5>
+					</td>
+					<td class="title">
+						<h6>Song Title</h6>
+					</td>
+					<td class="length">
+						<h5>2:03</h5>
+					</td>
+					<td>
+						<img src="img/like.png" alt="">
+					</td>
+				</tr>
+				
+			</table>
+		</div>
+
+	<div class="bar">
+		<div class="dot"></div>
+		<div class="time">
+		<h5 class="current-time">0:00</h5>
+		<h5 class="duration">0:00</h5>
+		</div>
+	</div>
+
+		<div class="info">
+			<h2>Song Title</h2>
+			<h3>artist</h3>
+		</div>
+		
+
+		<div class="controls">
+			<img src="img/random.gif" id="shuffle" alt="">
+			<img src="img/previous.gif" id="prev" alt="" >
+			<img src="img/play.gif" id="playpause" alt="" >
+			<img src="img/forward.gif" id="next" alt="" >
+			<img src="img/repeat.gif" id="repeat" alt="">
+		</div>
+
+		<div class="more-controls">
+			<img src="img/like.png" id="current-favourite"  alt="">
+			
+			<img src="img/settings.gif" id="options" alt="">
+		</div>
+		<div class="sider">
+			<span class="current-song-number">100</span>
+		</div>
+
+
+		
+		<!-- volume -->
+		<div class="move">
+			<div class="volume">
+				<img src="img/volume.png" id="volume-icon">
+				<input type="range"  id="volume" min="0" max="100" value="50">
+				<p id="show-volume">50</p>
+			</div>
+		</div>
+
+
+		<p class="current-song-title">Song Title</p>
+	</div>
+
+	<script src="js/script.js"></script>	
+</body>
+</html>
